@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Search</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src="confetti.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+    <script src = "app.js"></script>
+
+  
+</head>
+<body>
+
+    <div class="Thankyoupopup">
+        <img src="tick.png" width="100" height="100">
+        <h2> Thank you!</h2>
+        <p>We are grateful for your review </p>
+        <p>Your review will help many desperate students</p>
+        <input class="popupclosebtn" type="submit" value="Close"/>
+    </div>
+
+    <div class = "mainContainer">
+
+        <div class = "header">
+            <a href="#" onclick="window.location.reload(true);" class = "heading"> Course Search</a>
+        </div>
+        <div class = "search">
+            <form class = "textBox" id = "form">
+                <input type= "text" class = "textValue" id = "textVal" autocomplete = "off"  placeholder="Search for courses"/>
+            </form>
+
+            <button class = "btn"> Submit </button>
+
+        </div>
+
+        <div class = "courseContainer">
+            <div class = "courseContainerHeading"> Pick a course </div>
+            <div class = "courseContainerSubHeading"> Click on a course and get right to it. Post a review or submit the poll !</div>
+
+            <div class = "courseWindow">
+   
+            </div>
+        </div>
+
+        <div class = "eachContainer">
+            <div class = "courseHeading">
+            </div>
+
+            <div class="pollContainer">
+                <canvas height="50" id="myChart"></canvas>
+            </div>
+
+            <h4 class="votecounter">5 Students Voted</h4>
+            <input class="callpollpopup" type="submit" value="Submit a Poll"/>
+           
+           
+            <div class = "commentContainer" id = "containerID">
+                <div class = "comment">this class is blowing my mind</div>
+            </div>
+
+            <div class = "searchComment">
+                <form class = "textBoxCommment" id = "formComment" >
+                    <input  placeholder="Post a comment" autocomplete = "off" type= "text" class = "textValueComment" id = "textValComment" />
+                </form>
+                <button class = "btnComment"> Submit </button>
+            </div>
+
+        </div>
+
+    
+        <div class="sliderscontainer">
+
+            
+           
+            <div class = "closeButtonContainer">
+                <div class = "imageContainer">
+                    <img src="poll.png" class="polllogo">
+                </div>  
+                <button class = "closeButton"> X </button>
+            </div>
+          
+             <div class ="sliders">
+            <div class="pollslider">
+                <h4>Workload :</h4>
+                <h5> easy</h5>
+                <input type="range" min="0" max="100" value="0" name="Easy" id="workload">
+                <h5> hard</h5>
+            </div>
+            <div class="pollslider">
+
+                <h4>Grading :</h4>
+                <h5> easy</h5>
+                <input type="range" min="0" max="100" value="0" id="grading">
+                <h5> hard</h5>
+            </div>
+            <div class="pollslider">
+           
+                <h4>Exams :</h4>
+                <h5> easy</h5>
+                <input type="range" min="0" max="100" value="0" id="exams">
+                <h5> hard</h5>
+            </div>
+            <div class="pollslider">
+    
+                <h4>Content :</h4>
+                <h5> easy</h5>
+                <input type="range" min="0" max="100" value="0" id="content">
+                <h5> hard</h5>
+            </div>
+            <div class="pollslider">
+             
+                <h4>Professor :</h4>
+                <h5> kind</h5>
+                <input type="range" min="0" max="100" value="0" id="professor">
+                <h5> harsh</h5>
+            </div>
+            <input class="pollsubmitbtn" type="submit" value="Submit"/>
+        </div>
+        </div>
+
+       
+        
+        <div class = "footer">
+            <div class = "footer1">
+                <div class = "contact"> 
+                    <div class = "contactUs">Contact us</div>
+                    <a class = "contacts" href = "#">Facebook</a>
+                    <a class = "contacts" href = "#">Instagram</a>
+                    <a class = "contacts" href = "#">Gmail</a>
+                    <a class = "contacts" href = "#">Twitter</a>
+                </div>
+      
+                <div class = "moreInformation"> 
+                    <div class = "info">More Info</div>
+                    <a class = "infoLinks" href = "#">Random Links</a>
+                    <a class = "infoLinks" href = "#">Random Links</a>
+                    <a class = "infoLinks" href = "#">Random Links</a>
+                    <a class = "infoLinks" href = "#">Random Links</a>
+                </div>
+
+            </div>
+
+            <div class = "footer2"> 
+                <div class = " foot">Copright © Assignment 2- Conections - Lab</div>
+            </div>
+
+        </div>
+        
+
+    </div>     
+</body>
+</html>

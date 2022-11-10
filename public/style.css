@@ -1,0 +1,524 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    height: 100vh;
+    background-color:#16161a;
+    font-family: proxima-nova, sans-serif;
+}
+.mainContainer{
+    height: 1900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 100px;  
+}
+
+.header{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+    justify-content: left;
+    padding : 10px;
+    padding-left: 200px;
+    color: #fffffe;
+    padding-top: 30px;
+}    
+
+.heading{
+    text-decoration: none;
+    color: #fffffe;
+}
+   
+.search{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textBox{
+    width: 670px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.textValue{
+    width: 600px;
+    height: 47px;
+    background-color: #242629;
+    border-radius: 6px;
+    border: 1px solid grey;
+    box-shadow: none;
+    color: #fffffe;
+    padding-left : 15px;
+}
+
+.btn{
+    height: 47px;
+    width: 85px;
+    background-color: #7f5af0;
+    border-color: #7f5af0;
+    border-radius: 6px;
+    color:#fffffe;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background-color 0.3s; 
+}
+.btn:hover { 
+    background-color: #9d53f2; 
+}
+
+.courseContainer{
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #242629;
+    padding:100px;
+    padding-top:150px;
+    flex-direction: column;
+    padding-bottom: 300px;
+}
+
+.courseContainerHeading{
+    font-size: 50px;
+    font-weight: 800;
+    color: #fffffe;
+    margin-bottom: 20px;
+}
+
+.courseContainerSubHeading{
+    font-size: 20px;
+    color:#94a1b2;
+    margin-bottom: 100px;
+}
+
+.courseWindow{
+    height: 900px;
+    width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+    padding:60px;
+    gap:40px;
+    border-radius: 8px;
+    overflow: scroll;
+    justify-content: center;
+    background-color: #16161a;
+}
+
+.course{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    display: flex;
+    background-color: #9d53f2; 
+    border-color: #9d53f2;
+    font-weight: 100;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    color:#fffffe;
+    padding: 10px;
+    transition: background-color 0.3s; 
+    opacity: 0.8; 
+} 
+.course:hover { 
+    
+    background-color : #b07bec;
+    border-color: #b07bec;
+}
+
+
+.eachContainer{
+    height: 1500px;
+    /*display: flex;*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    background-color: #242629;
+}
+
+.votecounter{
+    margin-top: 15px;
+    color: #ffff;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.courseHeading{
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+    height: 100px;
+    width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    color: #fffffe;
+}
+
+/* poll box  */
+
+.sliderscontainer{
+    width: 400px;
+    background-color: rgb(26 24 24 / 92%);
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,80%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px 30px;
+    columns: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.sliderscontainer-open{
+    visibility: visible;
+    top: 135%;
+    transform: translate(-50%,-80%) scale(1);
+}
+
+.polllogo {
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+}
+
+.crossbtn{
+    width: 50px;
+    margin-top: -50px;
+    top: 100px;
+    border-radius: 50%;
+    transform: translate(170px,-100px) scale(1);
+    cursor: pointer;
+}
+.sliders {
+    margin: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.pollslider{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+    padding: 0px;
+    height: 20px;
+    color: #fffffe;
+    gap:12px;
+}
+.pollslider h4{
+    width: 90px;
+}
+
+.callpollpopup{
+    width: 150px;
+    margin: 20px 50px;
+    padding: 10px 0px;
+    outline: none;
+    cursor: pointer;
+    font-size: 19px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 20%);
+    background-color: #7f5af0;
+    border-color: #7f5af0;
+    border-radius: 6px;
+    color: #fffffe;
+    font-weight: 100;
+    transition: background-color 0.3s;
+    border: 0;
+}
+.callpollpopup:hover { 
+    background-color: #9d53f2; 
+}
+
+.closeButtonContainer{
+    height: 50px;
+    width: 430px;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.imageContainer{
+    height: 50px;
+    width: 370px;
+    display: flex;
+    /* border: 1px solid red; */
+    /* margin-right: 250px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.closeButton{
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+    background-color: #7f5af0;
+    border-color: #7f5af0;
+    transition: background-color 0.3s;
+    border: 0;
+    color: #fffffe;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.closeButton:hover { 
+    background-color: #9d53f2; 
+}
+
+
+.pollslider h4{
+    color: #ffff;
+}
+
+.pollContainer{
+    height: 600px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    padding:50px;
+    gap:20px;
+    overflow: scroll;
+    border-radius: 8px;
+    background-color: #16161a;
+    align-items: center;
+    justify-content: center;
+}
+
+.Thankyoupopup{
+    width: 400px;
+    background-color: rgb(26 24 24 / 92%);
+    color: #fffffe;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px 30px;
+    columns: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 110%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.Thankyoupopup h2{
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+.Thankyoupopup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popupclosebtn{
+    background-color: #7f5af0;
+    transition: background-color 0.3s;
+    color: #fffffe; 
+}
+
+.popupclosebtn:hover{
+    background-color: #9d53f2; 
+}
+
+.Thankyoupopup input{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0px;
+    background-color: #7f5af0;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    
+}
+
+.pollsubmitbtn{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0px;
+    background-color: #7f5af0;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s; 
+    color: #fffffe; 
+
+}
+
+.pollsubmitbtn:hover { 
+    background-color: #9d53f2; 
+}
+
+
+/* comment box  */
+
+.commentContainer{
+    height: 600px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    padding:50px;
+    gap:20px;
+    overflow: scroll;
+    border-radius: 8px;
+    background-color: #16161a;
+}
+
+.commentContainer > :first-child {
+    margin-top: auto
+}
+.comment{
+    height: fit-content;
+    width: fit-content;
+    border-radius: 18px;
+    background-color: #9d53f2; 
+    color: #fffffe;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+    padding-top: 12px;
+}
+
+.comment1{
+    height: 30px;
+    width: fit-content;
+    border-radius: 18px;
+    background-color: #9d53f2; 
+    color: #fffffe;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left:940px;
+}
+
+.searchComment{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap:30px;
+}
+
+.textBoxComment{
+    width: 670px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.textValueComment{
+    width: 600px;
+    height: 40px; 
+    background-color: #242629;
+    border-radius: 6px;
+    border: 1px solid grey;
+    box-shadow: none;
+    color: #fffffe;
+    padding-left : 15px;  
+}
+
+.btnComment{
+    height: 40px;
+    width: 90px;
+    background-color: #7f5af0;
+    border-color: #7f5af0;
+    border-radius: 6px;
+    color:#fffffe;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background-color 0.3s; 
+}
+
+.btnComment:hover { 
+    background-color: #9d53f2; 
+}
+
+
+.footer{
+    background-color: #16161a;
+    height: 200px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:70px;
+   
+}
+
+.footer1{
+    display:flex;
+    align-items: center;
+    justify-content: left;
+
+    margin-top:80px;
+    width:100%;
+}
+
+.contact, .moreInformation{
+    display: flex;
+    flex-direction: column;
+    color: #fffffe;
+    margin-left: 100px;
+}
+.contactUs, .info{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.contactUs{
+    margin-bottom: 55px;
+}
+
+.contacts , .infoLinks{
+    text-decoration: none;
+    color: #fffffe;
+    margin:8px;
+}
+
+.foot{
+    color: #fffffe;
+}
+
