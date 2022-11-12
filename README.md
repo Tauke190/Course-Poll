@@ -49,6 +49,9 @@ Anynomous feedback is a chat-like feature where you can write your true opinion 
 Poll Slider is a tool in conjuction with the first tool that allows the user to vote on different aspects of the course. The user can move the slider and vote with more precision about the course .This vote will be reflected on the bar graph real time.
 
 
+## Key Challenges ##
+
+
 
 
 
