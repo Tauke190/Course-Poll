@@ -51,6 +51,17 @@ Poll Slider is a tool in conjuction with the first tool that allows the user to 
 
 ## Key Challenges ##
 
+1.
+2.
+3.
+
+
+## Avinash
+
+
+
+## Sasha
+
 
 
 
