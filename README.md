@@ -40,6 +40,10 @@ Our color palattes is composed of shades of purple which matches with the theme 
 
 ## Feature 1 ##
 ![](https://github.com/Tauke190/Course-Poll/blob/master/Screen%20Shot%202022-11-12%20at%207.25.20%20PM.png)
+## Feature 2 ##
+![](https://github.com/Tauke190/Course-Poll/blob/master/Screen%20Shot%202022-11-12%20at%207.25.39%20PM.png)
+## Feature 3 ##
+![](https://github.com/Tauke190/Course-Poll/blob/master/Screen%20Shot%202022-11-12%20at%207.26.00%20PM.png)
 
 
 
