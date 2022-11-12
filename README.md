@@ -40,10 +40,13 @@ Our color palattes is composed of shades of purple which matches with the theme 
 
 ## Feature 1 ##
 ![](https://github.com/Tauke190/Course-Poll/blob/master/Screen%20Shot%202022-11-12%20at%207.25.20%20PM.png)
+A visualization tool that can help you visualize the workload, grading ,exams , professor and content of the particular course. This course can give you a general idea about the difficulty of the course.
 ## Feature 2 ##
 ![](https://github.com/Tauke190/Course-Poll/blob/master/Screen%20Shot%202022-11-12%20at%207.25.39%20PM.png)
+Anynomous feedback is a chat-like feature where you can write your true opinion about the course without revealing your identity. Reviews are a great way to learn about the course and it gives honest insights about the course.
 ## Feature 3 ##
 ![](https://github.com/Tauke190/Course-Poll/blob/master/Screen%20Shot%202022-11-12%20at%207.26.00%20PM.png)
+Poll Slider is a tool in conjuction with the first tool that allows the user to vote on different aspects of the course. The user can move the slider and vote with more precision about the course .This vote will be reflected on the bar graph real time.
 
 
 
